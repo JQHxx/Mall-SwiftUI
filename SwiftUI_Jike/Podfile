@@ -3,12 +3,12 @@ use_frameworks!
 
 target 'SwiftUI_Jike' do
 
-  # Combine
   pod 'Kingfisher', '~> 6.0'
   pod 'Alamofire', '~> 5.4.3'
   pod 'SwiftyJSON', '~> 5.0.1'
   
   
   # 参考1：https://github.com/quanghainguyen93/twitter-swiftui-clone
+  # 参数2 Combine: https://zhuanlan.zhihu.com/p/346149814
 
 end
