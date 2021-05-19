@@ -7,5 +7,8 @@ target 'SwiftUI_Jike' do
   pod 'Kingfisher', '~> 6.0'
   pod 'Alamofire', '~> 5.4.3'
   pod 'SwiftyJSON', '~> 5.0.1'
+  
+  
+  # 参考1：https://github.com/quanghainguyen93/twitter-swiftui-clone
 
 end

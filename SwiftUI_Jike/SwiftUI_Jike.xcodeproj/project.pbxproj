@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -68,6 +68,9 @@
 		08FAC67122A90DB900BC476C /* GYTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC66F22A90DB900BC476C /* GYTabView.swift */; };
 		08FAC67322A9125900BC476C /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC67222A9125900BC476C /* TabBarItem.swift */; };
 		92295C142C8C0EAC5A9F9134 /* Pods_SwiftUI_Jike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847A3195E9EF0B10450BBF1 /* Pods_SwiftUI_Jike.framework */; };
+		A0729B932655024300D045EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B922655024300D045EE /* CustomTextField.swift */; };
+		A0729B95265502A100D045EE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B94265502A100D045EE /* ImagePicker.swift */; };
+		A0729B97265502C900D045EE /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B96265502C900D045EE /* TextArea.swift */; };
 		A0D404A22654DAA100DD290D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D404A12654DAA100DD290D /* TestView.swift */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +153,9 @@
 		08FAC66F22A90DB900BC476C /* GYTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTabView.swift; sourceTree = "<group>"; };
 		08FAC67222A9125900BC476C /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		847B21D86320FD145BDEAFC7 /* Pods-SwiftUI_Jike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_Jike.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI_Jike/Pods-SwiftUI_Jike.release.xcconfig"; sourceTree = "<group>"; };
+		A0729B922655024300D045EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A0729B94265502A100D045EE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A0729B96265502C900D045EE /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		A0D404A12654DAA100DD290D /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		BE2695C984BA19CC9F82D96C /* Pods-SwiftUI_Jike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_Jike.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI_Jike/Pods-SwiftUI_Jike.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +196,7 @@
 		08284DAA22A6FB0B008C5D73 /* SwiftUI_Jike */ = {
 			isa = PBXGroup;
 			children = (
+				A0729B912655022C00D045EE /* Widgets */,
 				0888D55B22B0FF080041B8C4 /* Views */,
 				08FAC5FB22A8CEC500BC476C /* Tools */,
 				088DA24722A81A6C006103D5 /* Models */,
@@ -324,8 +331,17 @@
 				BE2695C984BA19CC9F82D96C /* Pods-SwiftUI_Jike.debug.xcconfig */,
 				847B21D86320FD145BDEAFC7 /* Pods-SwiftUI_Jike.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A0729B912655022C00D045EE /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				A0729B922655024300D045EE /* CustomTextField.swift */,
+				A0729B94265502A100D045EE /* ImagePicker.swift */,
+				A0729B96265502C900D045EE /* TextArea.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,12 +481,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0729B95265502A100D045EE /* ImagePicker.swift in Sources */,
 				08284DAC22A6FB0B008C5D73 /* AppDelegate.swift in Sources */,
 				A0D404A22654DAA100DD290D /* TestView.swift in Sources */,
 				08FAC64922A8D92A00BC476C /* HomeCell.swift in Sources */,
 				0888D55A22B0F9CB0041B8C4 /* GYSearchBar.swift in Sources */,
 				085DE47222B6069000F45CBC /* ZSegmentedControl.swift in Sources */,
 				08FAC67022A90DB900BC476C /* GYTabBarVC.swift in Sources */,
+				A0729B97265502C900D045EE /* TextArea.swift in Sources */,
 				08284DC222A75613008C5D73 /* SettingView.swift in Sources */,
 				08C52A9322A8509C00CDFA3D /* SegmentVC.swift in Sources */,
 				08284DAE22A6FB0B008C5D73 /* SceneDelegate.swift in Sources */,
@@ -489,6 +507,7 @@
 				088DA24622A81A15006103D5 /* CategoryRow.swift in Sources */,
 				0859FCB422B2612D003DDAEB /* EasyNotificationBadge.swift in Sources */,
 				0859FCB622B2612D003DDAEB /* AZTabBarController.swift in Sources */,
+				A0729B932655024300D045EE /* CustomTextField.swift in Sources */,
 				088DA24222A7DDBB006103D5 /* ActivityCell.swift in Sources */,
 				088DA23D22A7AF11006103D5 /* SettingCell.swift in Sources */,
 				08BB45E322B2B9720009716C /* CircleAvator.swift in Sources */,
