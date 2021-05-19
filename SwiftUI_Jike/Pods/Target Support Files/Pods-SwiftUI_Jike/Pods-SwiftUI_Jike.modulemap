@@ -1,0 +1,6 @@
+framework module Pods_SwiftUI_Jike {
+  umbrella header "Pods-SwiftUI_Jike-umbrella.h"
+
+  export *
+  module * { export * }
+}

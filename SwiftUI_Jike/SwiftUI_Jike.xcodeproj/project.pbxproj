@@ -67,6 +67,7 @@
 		08FAC67022A90DB900BC476C /* GYTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC66E22A90DB900BC476C /* GYTabBarVC.swift */; };
 		08FAC67122A90DB900BC476C /* GYTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC66F22A90DB900BC476C /* GYTabView.swift */; };
 		08FAC67322A9125900BC476C /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC67222A9125900BC476C /* TabBarItem.swift */; };
+		92295C142C8C0EAC5A9F9134 /* Pods_SwiftUI_Jike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847A3195E9EF0B10450BBF1 /* Pods_SwiftUI_Jike.framework */; };
 		A0D404A22654DAA100DD290D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D404A12654DAA100DD290D /* TestView.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		08284DC322A75BEE008C5D73 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		08284DC522A75C4A008C5D73 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		08284DC722A75C5F008C5D73 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		0847A3195E9EF0B10450BBF1 /* Pods_SwiftUI_Jike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Jike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0859FCAD22B2612D003DDAEB /* AZTabBarButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AZTabBarButtonDelegate.swift; sourceTree = "<group>"; };
 		0859FCAE22B2612D003DDAEB /* AZTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AZTabBarButton.swift; sourceTree = "<group>"; };
 		0859FCAF22B2612D003DDAEB /* EasyNotificationBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyNotificationBadge.swift; sourceTree = "<group>"; };
@@ -147,7 +149,9 @@
 		08FAC66E22A90DB900BC476C /* GYTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTabBarVC.swift; sourceTree = "<group>"; };
 		08FAC66F22A90DB900BC476C /* GYTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTabView.swift; sourceTree = "<group>"; };
 		08FAC67222A9125900BC476C /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		847B21D86320FD145BDEAFC7 /* Pods-SwiftUI_Jike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_Jike.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI_Jike/Pods-SwiftUI_Jike.release.xcconfig"; sourceTree = "<group>"; };
 		A0D404A12654DAA100DD290D /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		BE2695C984BA19CC9F82D96C /* Pods-SwiftUI_Jike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_Jike.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI_Jike/Pods-SwiftUI_Jike.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92295C142C8C0EAC5A9F9134 /* Pods_SwiftUI_Jike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +175,7 @@
 				08284DAA22A6FB0B008C5D73 /* SwiftUI_Jike */,
 				08284DA922A6FB0B008C5D73 /* Products */,
 				08F3E9E422ABCFBA00AD52D5 /* Frameworks */,
+				9FC67837B64B7CD9B46AA2CD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				08F3E9E722ABD04E00AD52D5 /* pop.framework */,
+				0847A3195E9EF0B10450BBF1 /* Pods_SwiftUI_Jike.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,6 +318,16 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		9FC67837B64B7CD9B46AA2CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE2695C984BA19CC9F82D96C /* Pods-SwiftUI_Jike.debug.xcconfig */,
+				847B21D86320FD145BDEAFC7 /* Pods-SwiftUI_Jike.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,10 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08284DBC22A6FB10008C5D73 /* Build configuration list for PBXNativeTarget "SwiftUI_Jike" */;
 			buildPhases = (
+				9166F397DA94EBB33A56FBAD /* [CP] Check Pods Manifest.lock */,
 				08284DA422A6FB0B008C5D73 /* Sources */,
 				08284DA522A6FB0B008C5D73 /* Frameworks */,
 				08284DA622A6FB0B008C5D73 /* Resources */,
 				08F3E9E922ABD20C00AD52D5 /* Embed Frameworks */,
+				23EF6B93DB357B6E20E6DE4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,6 +417,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23EF6B93DB357B6E20E6DE4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI_Jike/Pods-SwiftUI_Jike-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI_Jike/Pods-SwiftUI_Jike-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUI_Jike/Pods-SwiftUI_Jike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9166F397DA94EBB33A56FBAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUI_Jike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08284DA422A6FB0B008C5D73 /* Sources */ = {
@@ -574,6 +635,7 @@
 		};
 		08284DBD22A6FB10008C5D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2695C984BA19CC9F82D96C /* Pods-SwiftUI_Jike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -598,6 +660,7 @@
 		};
 		08284DBE22A6FB10008C5D73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847B21D86320FD145BDEAFC7 /* Pods-SwiftUI_Jike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
