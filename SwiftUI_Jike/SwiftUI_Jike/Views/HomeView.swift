@@ -50,22 +50,34 @@ struct HomeView : View {
                         GYSegment(titles: segItems, detaiList: $detailList, currentPage: $currentPage)
                             .frame(height: 36)
                             .offset(x: -25, y: 0)
+                        ForEach(detailList , id: \.self) { info in
+                            NavigationLink(destination: TestView()) {
+                                HomeCell(info: info)
+                            }.onTapGesture {
+                                
+                            }
+                        }
+                        
+                        /*
                         ForEach(detailList.indices , id: \.self) { i in
                             NavigationLink(destination: TestView()) {
                                 HomeCell(info: detailList[i])
+                            }.onTapGesture {
+                                
                             }
                         }
+                        */
                     }
                 }
                 .edgesIgnoringSafeArea(.top)
                 .padding(.top, -8)
                 .listStyle(GroupedListStyle())
             }
-            
-            .navigationBarHidden(true)
             .navigationBarTitle(Text("首页"))
+            .navigationBarHidden(true)
             .padding(.top, -8)
-        }
+        }.onAppear(perform: {
+        })
         
     }
 }

@@ -18,7 +18,7 @@ struct ContentView : View {
 					 AnyView(ChatView()),
 					 AnyView(SettingView())],
 				  tabItems: DataMgr.shared.getTabItems())
-		.edgesIgnoringSafeArea(.top)
+			.edgesIgnoringSafeArea(.top)
 
     }
 }

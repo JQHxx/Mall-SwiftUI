@@ -69,5 +69,6 @@ struct GYTabBarVC : UIViewControllerRepresentable {
         private func tabBarController(_ tabBarController: GYTabContent, shouldSelect viewController: UIViewController) -> Bool {
             return true
         }
+        
     }
 }

@@ -54,7 +54,6 @@
 		08C52A8F22A81F1E00CDFA3D /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08C52A8E22A81F1E00CDFA3D /* test.jpg */; };
 		08C52A9122A8242700CDFA3D /* test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08C52A9022A8242700CDFA3D /* test1.jpg */; };
 		08C52A9322A8509C00CDFA3D /* SegmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C52A9222A8509C00CDFA3D /* SegmentVC.swift */; };
-		08F1F28022B73C8D005EC6E2 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1F27F22B73C8D005EC6E2 /* TestView.swift */; };
 		08FAC64922A8D92A00BC476C /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC64822A8D92A00BC476C /* HomeCell.swift */; };
 		08FAC64B22A8DC4900BC476C /* kcc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08FAC64A22A8DC4900BC476C /* kcc.jpg */; };
 		08FAC64D22A8DCB300BC476C /* 30_Fotor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08FAC64C22A8DCB300BC476C /* 30_Fotor.jpg */; };
@@ -68,6 +67,7 @@
 		08FAC67022A90DB900BC476C /* GYTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC66E22A90DB900BC476C /* GYTabBarVC.swift */; };
 		08FAC67122A90DB900BC476C /* GYTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC66F22A90DB900BC476C /* GYTabView.swift */; };
 		08FAC67322A9125900BC476C /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC67222A9125900BC476C /* TabBarItem.swift */; };
+		A0D404A22654DAA100DD290D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D404A12654DAA100DD290D /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -133,7 +133,6 @@
 		08C52A8E22A81F1E00CDFA3D /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		08C52A9022A8242700CDFA3D /* test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test1.jpg; sourceTree = "<group>"; };
 		08C52A9222A8509C00CDFA3D /* SegmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentVC.swift; sourceTree = "<group>"; };
-		08F1F27F22B73C8D005EC6E2 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		08F3E9E722ABD04E00AD52D5 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = SwiftUI_Jike/Res/pop.framework; sourceTree = "<group>"; };
 		08FAC64822A8D92A00BC476C /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		08FAC64A22A8DC4900BC476C /* kcc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kcc.jpg; sourceTree = "<group>"; };
@@ -148,6 +147,7 @@
 		08FAC66E22A90DB900BC476C /* GYTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTabBarVC.swift; sourceTree = "<group>"; };
 		08FAC66F22A90DB900BC476C /* GYTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTabView.swift; sourceTree = "<group>"; };
 		08FAC67222A9125900BC476C /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		A0D404A12654DAA100DD290D /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +222,7 @@
 		0888D55B22B0FF080041B8C4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A0D404A12654DAA100DD290D /* TestView.swift */,
 				08284DAF22A6FB0B008C5D73 /* ContentView.swift */,
 				08284DC322A75BEE008C5D73 /* HomeView.swift */,
 				08284DC522A75C4A008C5D73 /* ActivityView.swift */,
@@ -231,7 +232,6 @@
 				08FAC66F22A90DB900BC476C /* GYTabView.swift */,
 				08FAC66E22A90DB900BC476C /* GYTabBarVC.swift */,
 				085DE47322B606FE00F45CBC /* GYSegment.swift */,
-				08F1F27F22B73C8D005EC6E2 /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -405,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08284DAC22A6FB0B008C5D73 /* AppDelegate.swift in Sources */,
+				A0D404A22654DAA100DD290D /* TestView.swift in Sources */,
 				08FAC64922A8D92A00BC476C /* HomeCell.swift in Sources */,
 				0888D55A22B0F9CB0041B8C4 /* GYSearchBar.swift in Sources */,
 				085DE47222B6069000F45CBC /* ZSegmentedControl.swift in Sources */,
@@ -437,7 +438,6 @@
 				086A477922A76F2900DDF3ED /* TabIconInfo.swift in Sources */,
 				0859FCB822B26264003DDAEB /* GYTabContent.swift in Sources */,
 				088DA24022A7D182006103D5 /* ChatCell.swift in Sources */,
-				08F1F28022B73C8D005EC6E2 /* TestView.swift in Sources */,
 				08284DB022A6FB0B008C5D73 /* ContentView.swift in Sources */,
 				0888D55322AE4DE30041B8C4 /* UIColor+Extensions.swift in Sources */,
 				088DA23B22A78C3B006103D5 /* UITool.swift in Sources */,
