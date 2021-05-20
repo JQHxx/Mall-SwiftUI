@@ -10,12 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectIndex = 0
+    @EnvironmentObject var tabBar : TabBarState
     
     var body: some View {
         
         TabView(selection: $selectIndex) {
             HomeContainer()
                 .environmentObject(HomeVM())
+                .environmentObject(tabBar)
                 .tabItem {
                     Image("tab_home")
                         .renderingMode(.template)

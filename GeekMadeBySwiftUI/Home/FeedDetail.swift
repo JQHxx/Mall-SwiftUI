@@ -11,6 +11,7 @@ import SwiftUI
 struct FeedDetail: View {
     var feed : Feed
     @State var isFavorite : Bool = false
+    @EnvironmentObject var tabBar : TabBarState
     
     var body: some View {
         WebView(redirect: feed.url)
@@ -34,6 +35,7 @@ struct FeedDetail: View {
             })
             .padding()
             .onAppear {
+                self.tabBar.hidden = true
                 self.isFavorite = DBManager.shared.entityWithId(self.feed._id) != nil
             }
     }

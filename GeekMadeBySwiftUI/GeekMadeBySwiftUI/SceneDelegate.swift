@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import Combine
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,13 +22,36 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
+        let tabBar = TabBarState()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = UIHostingController(rootView: contentView.environmentObject(tabBar))
             self.window = window
             window.makeKeyAndVisible()
+            
+            /*
+            //监听TabBarState状态
+            tabBar.$hidden.receive(subscriber: AnySubscriber(receiveSubscription: { (sub) in
+                sub.request(.unlimited)
+            }, receiveValue: { (value) -> Subscribers.Demand in
+                self.tabBarHidden(hidden: value)
+                return .none
+            }))
+ */
+        }
+    }
+    
+    func tabBarHidden(hidden:Bool){
+        for viewController in self.window!.rootViewController!.children {
+            if viewController.isKind(of: UITabBarController.self) {
+                let tabBarController = viewController as! UITabBarController
+                if tabBarController.tabBar.isHidden != hidden {
+                    tabBarController.tabBar.isHidden = hidden
+                }
+                return
+            }
         }
     }
 

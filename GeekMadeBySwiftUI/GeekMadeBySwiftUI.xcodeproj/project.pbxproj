@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A08643832656597400613CE7 /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08643822656597400613CE7 /* TabBarState.swift */; };
 		B2681E80CF97287D8D533E94 /* Pods_GeekMadeBySwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1568526009D74B61416C46 /* Pods_GeekMadeBySwiftUI.framework */; };
 		C34197E023B9D0020051E300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34197DF23B9D0020051E300 /* AppDelegate.swift */; };
 		C34197E223B9D0020051E300 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34197E123B9D0020051E300 /* SceneDelegate.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		4A1568526009D74B61416C46 /* Pods_GeekMadeBySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekMadeBySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7C1D4559333CBE43907151 /* Pods-GeekMadeBySwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekMadeBySwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-GeekMadeBySwiftUI/Pods-GeekMadeBySwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		A08643822656597400613CE7 /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
 		C34197DC23B9D0020051E300 /* GeekMadeBySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekMadeBySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34197DF23B9D0020051E300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C34197E123B9D0020051E300 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				C34197DF23B9D0020051E300 /* AppDelegate.swift */,
 				C34197E123B9D0020051E300 /* SceneDelegate.swift */,
 				C34197E323B9D0020051E300 /* ContentView.swift */,
+				A08643822656597400613CE7 /* TabBarState.swift */,
 				C34197E523B9D0030051E300 /* Assets.xcassets */,
 				C34197EA23B9D0030051E300 /* LaunchScreen.storyboard */,
 				C34197ED23B9D0030051E300 /* Info.plist */,
@@ -382,6 +385,7 @@
 				C34558B223CC77D800BC7C30 /* ImageBrowser.swift in Sources */,
 				C341980023B9D2990051E300 /* PageView.swift in Sources */,
 				C341980623B9DD220051E300 /* Const.swift in Sources */,
+				A08643832656597400613CE7 /* TabBarState.swift in Sources */,
 				C341980F23B9E1140051E300 /* Decoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

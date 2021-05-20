@@ -7,6 +7,7 @@ import SwiftUIRefresh
 
 struct HomeContainer: View {
     @EnvironmentObject var vm : HomeVM
+    @EnvironmentObject var tabBar : TabBarState
     @State var isRefreshing = false
     
     var body: some View {
@@ -33,7 +34,7 @@ struct HomeContainer: View {
                                 .background(Color.white)
                     ) {
                         ForEach(self.vm.data[index].feeds) { feed in
-                            NavigationLink(destination: FeedDetail(feed: feed)) {
+                            NavigationLink(destination: FeedDetail(feed: feed).environmentObject(tabBar)) {
                                 FeedView(feed: feed)
                             }
                             .padding(.trailing, -16)//hide accosryView(arrow)
@@ -42,6 +43,9 @@ struct HomeContainer: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
+            .onAppear(perform: {
+                self.tabBar.hidden = false
+            })
             .pullToRefresh(isShowing: $isRefreshing, onRefresh: {
                 self.vm.loadData {
                     self.isRefreshing = false
