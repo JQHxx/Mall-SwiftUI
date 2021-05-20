@@ -14,7 +14,8 @@ struct ContentView : View {
 	private var spinner: Spinner { Spinner(isAnimating: true, style: .large) }
 	let segItems: [String] = ["关注", "推荐", "附近", "即刻合伙人"]
 	var body: some View {
-		spinner.eraseToAnyView()
+		CWebView(url: "https://www.baidu.com").eraseToAnyView()
+		//spinner.eraseToAnyView()
 		/*
 		GYTabView(views:
 					[AnyView(HomeView()),
