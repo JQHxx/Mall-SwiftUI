@@ -11,48 +11,49 @@ import SwiftUI
 struct ChatView : View {
     var body: some View {
         VStack{
-        NavigationView{
-            VStack{
+            NavigationView{
                 VStack{
-                    HStack{
-                        Spacer()
-                        Text("聊天").bold()
-                        .padding(.leading, 44)
-                        Spacer()
-                        Image("discovery_icon")
-                        .padding(.horizontal, 15)
-                    }
-                    .padding(.top, 10)
-                    Divider()
-                }
-
-                List() {
-                    Section(header:
-                        VStack{
-                            ChatCell(item: ChatItem(id: 1000, imgName: "chat_box", title: "招呼", subTitle: "和XX等人的9999个招呼"))
-                            .offset(x: 0, y: 4)
-                            .padding(.horizontal, 18)
-                            Divider()
-                            .offset(x: 0, y: 3)
+                    VStack{
+                        HStack{
+                            Spacer()
+                            Text("聊天").bold()
+                                .padding(.leading, 44)
+                            Spacer()
+                            Image("discovery_icon")
+                                .padding(.horizontal, 15)
                         }
-                        .frame(width: SCREENWIDTH, height: 75, alignment: .leading)
-                        .background(Color.white)
-                        .offset(x: 0, y: -6)
-                    ){
-                        ForEach(DataMgr.shared.chatList.indices, id: \.self) { i in
-                            NavigationLink(destination: TestView()) {
-                                ChatCell(item: DataMgr.shared.chatList[i])
+                        .padding(.top, 10)
+                        Divider()
+                    }
+                    
+                    List() {
+                        Section(header:
+                                    VStack{
+                                        ChatCell(item: ChatItem(id: 1000, imgName: "chat_box", title: "招呼", subTitle: "和XX等人的9999个招呼"))
+                                            .offset(x: 0, y: 4)
+                                            .padding(.horizontal, 18)
+                                        Divider()
+                                            .offset(x: 0, y: 3)
+                                    }
+                                    .frame(width: SCREENWIDTH, height: 75, alignment: .leading)
+                                    .background(Color.white)
+                                    .offset(x: 0, y: -6)
+                        ){
+                            ForEach(DataMgr.shared.chatList.indices, id: \.self) { i in
+                                NavigationLink(destination: TestView()) {
+                                    ChatCell(item: DataMgr.shared.chatList[i])
+                                }
                             }
                         }
                     }
+                    .background(Color.white)
+                    .padding(.top, -8)
+                    .listStyle(GroupedListStyle())
                 }
-                .background(Color.white)
-                .padding(.top, -8)
-                .listStyle(GroupedListStyle())
-            }
-            .navigationBarTitle(Text("聊天"))
-            .navigationBarHidden(true)
-            }
+                .navigationBarTitle(Text("聊天"))
+                .navigationBarHidden(true)
+            }.onAppear(perform: {
+            })
         }
     }
 }

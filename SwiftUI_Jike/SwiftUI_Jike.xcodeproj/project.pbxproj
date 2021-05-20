@@ -68,6 +68,9 @@
 		08FAC67122A90DB900BC476C /* GYTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC66F22A90DB900BC476C /* GYTabView.swift */; };
 		08FAC67322A9125900BC476C /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FAC67222A9125900BC476C /* TabBarItem.swift */; };
 		92295C142C8C0EAC5A9F9134 /* Pods_SwiftUI_Jike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847A3195E9EF0B10450BBF1 /* Pods_SwiftUI_Jike.framework */; };
+		A02C42742655EA73003622EF /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C42732655EA73003622EF /* TabBarState.swift */; };
+		A02C42772655F466003622EF /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C42762655F466003622EF /* Spinner.swift */; };
+		A02C42792655F4B4003622EF /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C42782655F4B4003622EF /* View+Ext.swift */; };
 		A0729B932655024300D045EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B922655024300D045EE /* CustomTextField.swift */; };
 		A0729B95265502A100D045EE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B94265502A100D045EE /* ImagePicker.swift */; };
 		A0729B97265502C900D045EE /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B96265502C900D045EE /* TextArea.swift */; };
@@ -153,6 +156,9 @@
 		08FAC66F22A90DB900BC476C /* GYTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTabView.swift; sourceTree = "<group>"; };
 		08FAC67222A9125900BC476C /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		847B21D86320FD145BDEAFC7 /* Pods-SwiftUI_Jike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_Jike.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI_Jike/Pods-SwiftUI_Jike.release.xcconfig"; sourceTree = "<group>"; };
+		A02C42732655EA73003622EF /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
+		A02C42762655F466003622EF /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		A02C42782655F4B4003622EF /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		A0729B922655024300D045EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A0729B94265502A100D045EE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A0729B96265502C900D045EE /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
@@ -196,6 +202,7 @@
 		08284DAA22A6FB0B008C5D73 /* SwiftUI_Jike */ = {
 			isa = PBXGroup;
 			children = (
+				A02C42722655EA69003622EF /* Main */,
 				A0729B912655022C00D045EE /* Widgets */,
 				0888D55B22B0FF080041B8C4 /* Views */,
 				08FAC5FB22A8CEC500BC476C /* Tools */,
@@ -319,6 +326,7 @@
 				08205C5822B221E300E520A9 /* AppDef.swift */,
 				0859FCB722B26264003DDAEB /* GYTabContent.swift */,
 				0888D54F22AE4DE20041B8C4 /* UIColor+Extensions.swift */,
+				A02C42782655F4B4003622EF /* View+Ext.swift */,
 				0888D55022AE4DE30041B8C4 /* UIView+Layout.swift */,
 				088DA23A22A78C3B006103D5 /* UITool.swift */,
 			);
@@ -334,9 +342,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A02C42722655EA69003622EF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A02C42732655EA73003622EF /* TabBarState.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		A0729B912655022C00D045EE /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				A02C42762655F466003622EF /* Spinner.swift */,
 				A0729B922655024300D045EE /* CustomTextField.swift */,
 				A0729B94265502A100D045EE /* ImagePicker.swift */,
 				A0729B96265502C900D045EE /* TextArea.swift */,
@@ -497,6 +514,7 @@
 				0888D55D22B11A740041B8C4 /* HomeDetailInfo.swift in Sources */,
 				08284DC422A75BEE008C5D73 /* HomeView.swift in Sources */,
 				08284DC822A75C5F008C5D73 /* ChatView.swift in Sources */,
+				A02C42792655F4B4003622EF /* View+Ext.swift in Sources */,
 				08FAC67122A90DB900BC476C /* GYTabView.swift in Sources */,
 				08FAC67322A9125900BC476C /* TabBarItem.swift in Sources */,
 				0888D55422AE4DE30041B8C4 /* UIView+Layout.swift in Sources */,
@@ -512,6 +530,7 @@
 				088DA23D22A7AF11006103D5 /* SettingCell.swift in Sources */,
 				08BB45E322B2B9720009716C /* CircleAvator.swift in Sources */,
 				086A477B22A7705500DDF3ED /* Datas.swift in Sources */,
+				A02C42772655F466003622EF /* Spinner.swift in Sources */,
 				08205C5922B221E400E520A9 /* AppDef.swift in Sources */,
 				088DA23922A78B82006103D5 /* CircleImage.swift in Sources */,
 				0859FCB222B2612D003DDAEB /* AZTabBarButtonDelegate.swift in Sources */,
@@ -520,6 +539,7 @@
 				088DA24022A7D182006103D5 /* ChatCell.swift in Sources */,
 				08284DB022A6FB0B008C5D73 /* ContentView.swift in Sources */,
 				0888D55322AE4DE30041B8C4 /* UIColor+Extensions.swift in Sources */,
+				A02C42742655EA73003622EF /* TabBarState.swift in Sources */,
 				088DA23B22A78C3B006103D5 /* UITool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
