@@ -31,7 +31,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
             
-            /*
             //监听TabBarState状态
             tabBar.$hidden.receive(subscriber: AnySubscriber(receiveSubscription: { (sub) in
                 sub.request(.unlimited)
@@ -39,7 +38,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 self.tabBarHidden(hidden: value)
                 return .none
             }))
- */
         }
     }
     

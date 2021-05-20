@@ -34,7 +34,11 @@ struct HomeContainer: View {
                                 .background(Color.white)
                     ) {
                         ForEach(self.vm.data[index].feeds) { feed in
-                            NavigationLink(destination: FeedDetail(feed: feed).environmentObject(tabBar)) {
+                            NavigationLink(destination: FeedDetail(feed: feed).onAppear(perform: {
+                                self.tabBar.hidden = true
+                            }).onDisappear(perform: {
+                                self.tabBar.hidden = false
+                            })) {
                                 FeedView(feed: feed)
                             }
                             .padding(.trailing, -16)//hide accosryView(arrow)
@@ -43,9 +47,6 @@ struct HomeContainer: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
-            .onAppear(perform: {
-                self.tabBar.hidden = false
-            })
             .pullToRefresh(isShowing: $isRefreshing, onRefresh: {
                 self.vm.loadData {
                     self.isRefreshing = false
