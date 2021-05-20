@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A08643832656597400613CE7 /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08643822656597400613CE7 /* TabBarState.swift */; };
+		A08643A426568D5900613CE7 /* TabBarAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08643A326568D5900613CE7 /* TabBarAccessor.swift */; };
 		B2681E80CF97287D8D533E94 /* Pods_GeekMadeBySwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1568526009D74B61416C46 /* Pods_GeekMadeBySwiftUI.framework */; };
 		C34197E023B9D0020051E300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34197DF23B9D0020051E300 /* AppDelegate.swift */; };
 		C34197E223B9D0020051E300 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34197E123B9D0020051E300 /* SceneDelegate.swift */; };
@@ -46,6 +47,7 @@
 		4A1568526009D74B61416C46 /* Pods_GeekMadeBySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekMadeBySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7C1D4559333CBE43907151 /* Pods-GeekMadeBySwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekMadeBySwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-GeekMadeBySwiftUI/Pods-GeekMadeBySwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		A08643822656597400613CE7 /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
+		A08643A326568D5900613CE7 /* TabBarAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAccessor.swift; sourceTree = "<group>"; };
 		C34197DC23B9D0020051E300 /* GeekMadeBySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekMadeBySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34197DF23B9D0020051E300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C34197E123B9D0020051E300 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				C34197EA23B9D0030051E300 /* LaunchScreen.storyboard */,
 				C34197ED23B9D0030051E300 /* Info.plist */,
 				C34197E723B9D0030051E300 /* Preview Content */,
+				A08643A326568D5900613CE7 /* TabBarAccessor.swift */,
 			);
 			path = GeekMadeBySwiftUI;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				C34197E223B9D0020051E300 /* SceneDelegate.swift in Sources */,
 				C34197E423B9D0020051E300 /* ContentView.swift in Sources */,
 				C34197FC23B9D0F70051E300 /* CategoryContainer.swift in Sources */,
+				A08643A426568D5900613CE7 /* TabBarAccessor.swift in Sources */,
 				C3D280D123BB677300C160DD /* Dictionary+String.swift in Sources */,
 				C3D280A923B9F89000C160DD /* KFImage.swift in Sources */,
 				C34558B223CC77D800BC7C30 /* ImageBrowser.swift in Sources */,

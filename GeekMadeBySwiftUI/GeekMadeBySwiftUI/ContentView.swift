@@ -17,7 +17,6 @@ struct ContentView: View {
         TabView(selection: $selectIndex) {
             HomeContainer()
                 .environmentObject(HomeVM())
-                .environmentObject(tabBar)
                 .tabItem {
                     Image("tab_home")
                         .renderingMode(.template)

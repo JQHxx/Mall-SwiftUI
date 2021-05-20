@@ -7,8 +7,8 @@ import SwiftUIRefresh
 
 struct HomeContainer: View {
     @EnvironmentObject var vm : HomeVM
-    @EnvironmentObject var tabBar : TabBarState
     @State var isRefreshing = false
+    @State private var tabBar: UITabBar! = nil
     
     var body: some View {
         NavigationView {
@@ -35,9 +35,9 @@ struct HomeContainer: View {
                     ) {
                         ForEach(self.vm.data[index].feeds) { feed in
                             NavigationLink(destination: FeedDetail(feed: feed).onAppear(perform: {
-                                self.tabBar.hidden = true
+                                self.tabBar.isHidden = true
                             }).onDisappear(perform: {
-                                self.tabBar.hidden = false
+                                self.tabBar.isHidden = false
                             })) {
                                 FeedView(feed: feed)
                             }
@@ -53,6 +53,9 @@ struct HomeContainer: View {
                 }
             })
             .navigationBarTitle("Today", displayMode: .inline)
+            .background(TabBarAccessor { tabbar in   // << here !!
+                self.tabBar = tabbar
+            })
         }
     }
 }
