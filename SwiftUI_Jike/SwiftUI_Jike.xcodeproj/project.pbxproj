@@ -71,6 +71,7 @@
 		A02C42742655EA73003622EF /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C42732655EA73003622EF /* TabBarState.swift */; };
 		A02C42772655F466003622EF /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C42762655F466003622EF /* Spinner.swift */; };
 		A02C42792655F4B4003622EF /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C42782655F4B4003622EF /* View+Ext.swift */; };
+		A02C427B2655F766003622EF /* ColorUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C427A2655F766003622EF /* ColorUISlider.swift */; };
 		A0729B932655024300D045EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B922655024300D045EE /* CustomTextField.swift */; };
 		A0729B95265502A100D045EE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B94265502A100D045EE /* ImagePicker.swift */; };
 		A0729B97265502C900D045EE /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B96265502C900D045EE /* TextArea.swift */; };
@@ -159,6 +160,7 @@
 		A02C42732655EA73003622EF /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
 		A02C42762655F466003622EF /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		A02C42782655F4B4003622EF /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		A02C427A2655F766003622EF /* ColorUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUISlider.swift; sourceTree = "<group>"; };
 		A0729B922655024300D045EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A0729B94265502A100D045EE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A0729B96265502C900D045EE /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				A0729B922655024300D045EE /* CustomTextField.swift */,
 				A0729B94265502A100D045EE /* ImagePicker.swift */,
 				A0729B96265502C900D045EE /* TextArea.swift */,
+				A02C427A2655F766003622EF /* ColorUISlider.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				0888D55422AE4DE30041B8C4 /* UIView+Layout.swift in Sources */,
 				08C52A8A22A81AB900CDFA3D /* ZoneModel.swift in Sources */,
 				088DA24422A7FBEF006103D5 /* ZoneCell.swift in Sources */,
+				A02C427B2655F766003622EF /* ColorUISlider.swift in Sources */,
 				085DE47422B606FE00F45CBC /* GYSegment.swift in Sources */,
 				08284DC622A75C4A008C5D73 /* ActivityView.swift in Sources */,
 				088DA24622A81A15006103D5 /* CategoryRow.swift in Sources */,
