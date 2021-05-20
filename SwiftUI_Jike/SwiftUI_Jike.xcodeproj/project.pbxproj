@@ -206,6 +206,7 @@
 		08284DAA22A6FB0B008C5D73 /* SwiftUI_Jike */ = {
 			isa = PBXGroup;
 			children = (
+				A086432E2656383100613CE7 /* Network */,
 				A02C42722655EA69003622EF /* Main */,
 				A0729B912655022C00D045EE /* Widgets */,
 				0888D55B22B0FF080041B8C4 /* Views */,
@@ -365,6 +366,13 @@
 				A02C427C2655F936003622EF /* CWebView.swift */,
 			);
 			path = Widgets;
+			sourceTree = "<group>";
+		};
+		A086432E2656383100613CE7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

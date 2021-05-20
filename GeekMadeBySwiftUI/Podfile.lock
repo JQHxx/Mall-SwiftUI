@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Introspect (0.1.3)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Result (4.1.0)
+  - RxSwift (4.5.0)
+  - SwiftUIRefresh (0.0.3):
+    - Introspect (~> 0.1.0)
+  - WaterfallGrid (0.3.2)
+
+DEPENDENCIES:
+  - Kingfisher
+  - Moya/RxSwift
+  - SwiftUIRefresh
+  - WaterfallGrid
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Introspect
+    - Kingfisher
+    - Moya
+    - Result
+    - RxSwift
+    - SwiftUIRefresh
+    - WaterfallGrid
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Introspect: 2be020f30f084ada52bb4387fff83fa52c5c400e
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SwiftUIRefresh: ca6ae2718d25aad5dd68bbf5d2ae36ef6ade98bf
+  WaterfallGrid: 52452469ac5192d0d1f30b5187e3ce590270835b
+
+PODFILE CHECKSUM: 653fc82fdf8c051c65ff0b8ea6979a336369d4a0
+
+COCOAPODS: 1.10.1

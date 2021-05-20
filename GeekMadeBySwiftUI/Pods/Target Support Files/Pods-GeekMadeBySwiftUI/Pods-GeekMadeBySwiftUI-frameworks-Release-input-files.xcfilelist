@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-GeekMadeBySwiftUI/Pods-GeekMadeBySwiftUI-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Introspect/Introspect.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
+${BUILT_PRODUCTS_DIR}/Result/Result.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SwiftUIRefresh/SwiftUIRefresh.framework
+${BUILT_PRODUCTS_DIR}/WaterfallGrid/WaterfallGrid.framework
