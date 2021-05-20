@@ -10,5 +10,6 @@ target 'SwiftUI_Jike' do
   
   # 参考1：https://github.com/quanghainguyen93/twitter-swiftui-clone
   # 参数2 Combine: https://zhuanlan.zhihu.com/p/346149814
+  # 上下拉刷新：https://github.com/wxxsw/Refresh
 
 end
