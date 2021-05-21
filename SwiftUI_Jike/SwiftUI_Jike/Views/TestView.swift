@@ -13,7 +13,7 @@ struct TestView : View {
         NavigationView {
             Text("hahah")
         }.onAppear(perform: {
-        })
+        }).edgesIgnoringSafeArea(.all)
     }
 }
 
