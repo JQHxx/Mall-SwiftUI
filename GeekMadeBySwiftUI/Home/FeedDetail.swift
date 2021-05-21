@@ -13,7 +13,9 @@ struct FeedDetail: View {
     @State var isFavorite : Bool = false
     
     var body: some View {
+        //VStack {
         WebView(redirect: feed.url)
+            //                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
             .navigationBarTitle("Detail", displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
                 if DBManager.shared.entityWithId(self.feed._id) != nil {
@@ -26,16 +28,18 @@ struct FeedDetail: View {
             }) {
                 if self.isFavorite {
                     Image(systemName: "star.fill")
-                    .foregroundColor(.yellow)
+                        .foregroundColor(.yellow)
                 } else {
                     Image(systemName: "star")
-                    .foregroundColor(.gray)
+                        .foregroundColor(.gray)
                 }
             })
             .padding()
+            .edgesIgnoringSafeArea(.all)
             .onAppear {
                 self.isFavorite = DBManager.shared.entityWithId(self.feed._id) != nil
             }
+        //}
     }
 }
 

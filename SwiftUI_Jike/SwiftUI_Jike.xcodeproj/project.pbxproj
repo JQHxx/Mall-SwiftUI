@@ -73,6 +73,8 @@
 		A02C42792655F4B4003622EF /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C42782655F4B4003622EF /* View+Ext.swift */; };
 		A02C427B2655F766003622EF /* ColorUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C427A2655F766003622EF /* ColorUISlider.swift */; };
 		A02C427D2655F936003622EF /* CWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C427C2655F936003622EF /* CWebView.swift */; };
+		A068AA5026573D1500A0A1B2 /* UIKitTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068AA4F26573D1500A0A1B2 /* UIKitTabView.swift */; };
+		A068AA5226573D4100A0A1B2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068AA5126573D4100A0A1B2 /* TabBarController.swift */; };
 		A0729B932655024300D045EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B922655024300D045EE /* CustomTextField.swift */; };
 		A0729B95265502A100D045EE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B94265502A100D045EE /* ImagePicker.swift */; };
 		A0729B97265502C900D045EE /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B96265502C900D045EE /* TextArea.swift */; };
@@ -163,6 +165,8 @@
 		A02C42782655F4B4003622EF /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		A02C427A2655F766003622EF /* ColorUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUISlider.swift; sourceTree = "<group>"; };
 		A02C427C2655F936003622EF /* CWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWebView.swift; sourceTree = "<group>"; };
+		A068AA4F26573D1500A0A1B2 /* UIKitTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTabView.swift; sourceTree = "<group>"; };
+		A068AA5126573D4100A0A1B2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A0729B922655024300D045EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A0729B94265502A100D045EE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A0729B96265502C900D045EE /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 			isa = PBXGroup;
 			children = (
 				A02C42732655EA73003622EF /* TabBarState.swift */,
+				A068AA4F26573D1500A0A1B2 /* UIKitTabView.swift */,
+				A068AA5126573D4100A0A1B2 /* TabBarController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 				08C52A9322A8509C00CDFA3D /* SegmentVC.swift in Sources */,
 				08284DAE22A6FB0B008C5D73 /* SceneDelegate.swift in Sources */,
 				0859FCB322B2612D003DDAEB /* AZTabBarButton.swift in Sources */,
+				A068AA5026573D1500A0A1B2 /* UIKitTabView.swift in Sources */,
 				0859FCB522B2612D003DDAEB /* AZTabBarDelegate.swift in Sources */,
 				0888D55D22B11A740041B8C4 /* HomeDetailInfo.swift in Sources */,
 				08284DC422A75BEE008C5D73 /* HomeView.swift in Sources */,
@@ -535,6 +542,7 @@
 				0888D55422AE4DE30041B8C4 /* UIView+Layout.swift in Sources */,
 				08C52A8A22A81AB900CDFA3D /* ZoneModel.swift in Sources */,
 				088DA24422A7FBEF006103D5 /* ZoneCell.swift in Sources */,
+				A068AA5226573D4100A0A1B2 /* TabBarController.swift in Sources */,
 				A02C427B2655F766003622EF /* ColorUISlider.swift in Sources */,
 				085DE47422B606FE00F45CBC /* GYSegment.swift in Sources */,
 				08284DC622A75C4A008C5D73 /* ActivityView.swift in Sources */,

@@ -10,6 +10,11 @@ struct HomeContainer: View {
     @State var isRefreshing = false
     @State private var tabBar: UITabBar! = nil
     
+    init() {
+        // UIComponents構造体（ヘルパークラス）から利用する
+        //UIComponents.setupNavigationBar()
+    }
+    
     var body: some View {
         NavigationView {
             List {
@@ -52,11 +57,13 @@ struct HomeContainer: View {
                     self.isRefreshing = false
                 }
             })
-            .navigationBarTitle("Today", displayMode: .inline)
-            .background(TabBarAccessor { tabbar in   // << here !!
-                self.tabBar = tabbar
-            })
+
         }
+        .edgesIgnoringSafeArea(.all)
+        .navigationBarTitle("Today", displayMode: .inline)
+        .background(TabBarAccessor { tabbar in   // << here !!
+            self.tabBar = tabbar
+        })
     }
 }
 
