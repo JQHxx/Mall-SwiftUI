@@ -76,6 +76,7 @@
 		A068AA5026573D1500A0A1B2 /* UIKitTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068AA4F26573D1500A0A1B2 /* UIKitTabView.swift */; };
 		A068AA5226573D4100A0A1B2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068AA5126573D4100A0A1B2 /* TabBarController.swift */; };
 		A068AA5E2657623100A0A1B2 /* TabBarAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068AA5D2657623100A0A1B2 /* TabBarAccessor.swift */; };
+		A068AA982657B34900A0A1B2 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068AA972657B34900A0A1B2 /* NavigationController.swift */; };
 		A0729B932655024300D045EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B922655024300D045EE /* CustomTextField.swift */; };
 		A0729B95265502A100D045EE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B94265502A100D045EE /* ImagePicker.swift */; };
 		A0729B97265502C900D045EE /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B96265502C900D045EE /* TextArea.swift */; };
@@ -169,6 +170,7 @@
 		A068AA4F26573D1500A0A1B2 /* UIKitTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTabView.swift; sourceTree = "<group>"; };
 		A068AA5126573D4100A0A1B2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A068AA5D2657623100A0A1B2 /* TabBarAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarAccessor.swift; path = ../../../GeekMadeBySwiftUI/GeekMadeBySwiftUI/TabBarAccessor.swift; sourceTree = "<group>"; };
+		A068AA972657B34900A0A1B2 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A0729B922655024300D045EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A0729B94265502A100D045EE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A0729B96265502C900D045EE /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 				A02C42732655EA73003622EF /* TabBarState.swift */,
 				A068AA4F26573D1500A0A1B2 /* UIKitTabView.swift */,
 				A068AA5126573D4100A0A1B2 /* TabBarController.swift */,
+				A068AA972657B34900A0A1B2 /* NavigationController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				08205C5922B221E400E520A9 /* AppDef.swift in Sources */,
 				088DA23922A78B82006103D5 /* CircleImage.swift in Sources */,
 				0859FCB222B2612D003DDAEB /* AZTabBarButtonDelegate.swift in Sources */,
+				A068AA982657B34900A0A1B2 /* NavigationController.swift in Sources */,
 				086A477922A76F2900DDF3ED /* TabIconInfo.swift in Sources */,
 				0859FCB822B26264003DDAEB /* GYTabContent.swift in Sources */,
 				088DA24022A7D182006103D5 /* ChatCell.swift in Sources */,

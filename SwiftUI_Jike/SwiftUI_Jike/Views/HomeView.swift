@@ -54,9 +54,11 @@ struct HomeView : View {
                                 .offset(x: -25, y: 0)
                             ForEach(detailList , id: \.self) { info in
                                 NavigationLink(destination: TestView().onAppear(perform: {
-                                    self.tabBar?.isHidden = true
+                                    //self.tabBar?.isHidden = true
+                                    
                                 }).onDisappear(perform: {
-                                    self.tabBar?.isHidden = false
+                                    //self.tabBar?.isHidden = false
+
                                 })) {
                                     HomeCell(info: info)
                                 }
@@ -81,7 +83,7 @@ struct HomeView : View {
                 .navigationBarHidden(true)
                 .padding(.top, -8)
             }.background(TabBarAccessor { tabbar in   // << here !!
-                self.tabBar = tabbar
+                //self.tabBar = tabbar
             })
             
         }
