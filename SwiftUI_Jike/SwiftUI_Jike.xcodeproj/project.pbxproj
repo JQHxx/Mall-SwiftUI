@@ -80,6 +80,7 @@
 		A0729B932655024300D045EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B922655024300D045EE /* CustomTextField.swift */; };
 		A0729B95265502A100D045EE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B94265502A100D045EE /* ImagePicker.swift */; };
 		A0729B97265502C900D045EE /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B96265502C900D045EE /* TextArea.swift */; };
+		A0B7117D265C9FE100E13030 /* Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7117C265C9FE100E13030 /* Rounded.swift */; };
 		A0D404A22654DAA100DD290D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D404A12654DAA100DD290D /* TestView.swift */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +175,7 @@
 		A0729B922655024300D045EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A0729B94265502A100D045EE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A0729B96265502C900D045EE /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		A0B7117C265C9FE100E13030 /* Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounded.swift; sourceTree = "<group>"; };
 		A0D404A12654DAA100DD290D /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		BE2695C984BA19CC9F82D96C /* Pods-SwiftUI_Jike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI_Jike.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI_Jike/Pods-SwiftUI_Jike.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -363,6 +365,7 @@
 				A068AA4F26573D1500A0A1B2 /* UIKitTabView.swift */,
 				A068AA5126573D4100A0A1B2 /* TabBarController.swift */,
 				A068AA972657B34900A0A1B2 /* NavigationController.swift */,
+				A0B7117C265C9FE100E13030 /* Rounded.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				A02C427D2655F936003622EF /* CWebView.swift in Sources */,
 				08FAC67022A90DB900BC476C /* GYTabBarVC.swift in Sources */,
 				A0729B97265502C900D045EE /* TextArea.swift in Sources */,
+				A0B7117D265C9FE100E13030 /* Rounded.swift in Sources */,
 				08284DC222A75613008C5D73 /* SettingView.swift in Sources */,
 				08C52A9322A8509C00CDFA3D /* SegmentVC.swift in Sources */,
 				08284DAE22A6FB0B008C5D73 /* SceneDelegate.swift in Sources */,

@@ -4,8 +4,8 @@ use_frameworks!
 target 'MyApp' do
  
 
-  pod 'FirebaseCore'
-  pod 'FirebaseFirestore'
+  # pod 'FirebaseCore'
+  # pod 'Firebase/Firestore'
   pod 'lottie-ios'
   pod 'SDWebImageSwiftUI'
   pod 'SwiftyJSON'

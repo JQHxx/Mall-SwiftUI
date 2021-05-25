@@ -232,14 +232,13 @@
 				A96BA06825E3366300A8EC58 /* Sources */,
 				A96BA06925E3366300A8EC58 /* Frameworks */,
 				A96BA06A25E3366300A8EC58 /* Resources */,
+				9B29624A739F743713C973B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MyApp;
-			packageProductDependencies = (
-			);
 			productName = MyApp;
 			productReference = A96BA06C25E3366300A8EC58 /* MyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -267,8 +266,6 @@
 				Base,
 			);
 			mainGroup = A96BA06325E3366300A8EC58;
-			packageReferences = (
-			);
 			productRefGroup = A96BA06D25E3366300A8EC58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,6 +291,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9B29624A739F743713C973B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DDF4963B06A29FD3249C37B0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
