@@ -18,7 +18,7 @@ class TextFieldDelegate: NSObject, UITextFieldDelegate {
 // 定义UIViewRepresentable
 struct MyTextField: UIViewRepresentable {
     
-    var text: String
+    @Binding var text: String
     var placeholder: String
     private let delegate = TextFieldDelegate()
     

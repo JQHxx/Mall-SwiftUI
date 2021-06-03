@@ -11,15 +11,20 @@ import UIKit
 // 自定义个SegmentControl控件
 struct SegmentControl: UIViewRepresentable {
     
+
+    var titles: [String]
     @Binding var selectedSegmentIndex: Int
 
     // 下面两个方法都是和 UIKit 相关
     func makeUIView(context: Context) -> UISegmentedControl {
         
         let segmentControl = UISegmentedControl()
-        segmentControl.insertSegment(withTitle: "红", at: 0, animated: true)
-        segmentControl.insertSegment(withTitle: "黄", at: 1, animated: true)
-        segmentControl.insertSegment(withTitle: "蓝", at: 2, animated: true)
+
+        var i: Int = 0
+        for str in titles {
+            i += 1
+            segmentControl.insertSegment(withTitle: str, at: i, animated: true)
+        }
         segmentControl.selectedSegmentIndex = selectedSegmentIndex
         
         // 注意这里的参数，与Coordinator有关

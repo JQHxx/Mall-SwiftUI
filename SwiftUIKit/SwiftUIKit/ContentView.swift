@@ -14,6 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         
+        /*
         VStack(alignment: .leading) {
             VStack(alignment: .center) {
                 JXSView.init(titles: titles, selectedIndex: $selectIndex).frame(height: 30)
@@ -22,6 +23,9 @@ struct ContentView: View {
             }
         }.navigationBarHidden(true)
         .edgesIgnoringSafeArea(.bottom)
+ */
+        
+        SegmentControl(titles: titles, selectedSegmentIndex: $selectIndex)
     }
 }
 
