@@ -17,7 +17,7 @@ struct JXSView: UIViewRepresentable {
     
 
     func updateUIView(_ uiView: JXSegmentedView, context: Context) {
-        
+        uiView.defaultSelectedIndex = selectedIndex
     }
 
     func makeUIView(context: Context) -> JXSegmentedView {

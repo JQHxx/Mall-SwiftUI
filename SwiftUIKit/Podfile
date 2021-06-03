@@ -4,7 +4,7 @@ use_frameworks!
 
 target 'SwiftUIKit' do
 
-#  pod 'Kingfisher'
+  pod 'Kingfisher'
 #  pod 'WaterfallGrid'
 #  pod 'Moya/RxSwift'
 #  pod "SwiftUIRefresh"

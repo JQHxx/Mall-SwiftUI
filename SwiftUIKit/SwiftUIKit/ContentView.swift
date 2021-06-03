@@ -21,7 +21,7 @@ struct ContentView: View {
                 Text("\(selectIndex)").frame(height: UIScreen.main.bounds.height - 31)
             }
         }.navigationBarHidden(true)
-        .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
