@@ -19,6 +19,7 @@ target 'SwiftUIKit' do
   pod 'SDCycleScrollView'
   pod 'MJRefresh'
   pod 'SnapKit'
+  pod 'TZImagePickerController'
 
   target 'SwiftUIKitTests' do
     inherit! :search_paths
