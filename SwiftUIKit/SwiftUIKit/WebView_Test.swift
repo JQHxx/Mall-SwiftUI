@@ -12,7 +12,7 @@ class WebViewModelObject: ObservableObject {
     @Published var isPullDown: Bool = false {
         didSet {
             if isPullDown {
-                isPullDown = false
+                //isPullDown = false
             }
         }
     }
@@ -24,7 +24,7 @@ struct WebView_Test: View {
     @ObservedObject var modelObject = WebViewModelObject()
     var body: some View {
         WebView.init(redirect: "https://www.baidu.com").background(RefreshView.init(isPullDown: $modelObject.isPullDown, isPullUp: $modelObject.isPullUp, isNoMoreData: $modelObject.isNoMoreData, pullDownAction: {
-            
+            $modelObject.isPullDown.wrappedValue = false
         }))
     }
 }
