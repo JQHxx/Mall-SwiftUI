@@ -111,6 +111,7 @@ struct RefreshView: UIViewRepresentable {
     
     private func tableView(root: UIView) -> UITableView? {
         for subview in root.subviews {
+            //print(subview.self)
             if subview.isKind(of: UITableView.self) {
                 return subview as? UITableView
             } else if let tableView = tableView(root: subview) {
