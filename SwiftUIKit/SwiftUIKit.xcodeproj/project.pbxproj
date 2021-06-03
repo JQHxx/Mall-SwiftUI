@@ -33,6 +33,7 @@
 		A02F396B2668B3EC0084D27A /* SelectImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F396A2668B3EC0084D27A /* SelectImages.swift */; };
 		A02F39802668CC210084D27A /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F397F2668CC210084D27A /* NavigationConfigurator.swift */; };
 		A02F39862668D0850084D27A /* MyHontingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F39852668D0850084D27A /* MyHontingController.swift */; };
+		A02F398E2668DA590084D27A /* WebView_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F398D2668DA590084D27A /* WebView_Test.swift */; };
 		E813AEBD20F8A0FED29AB867 /* Pods_SwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A2E42252EA4F8DA7E5784 /* Pods_SwiftUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		A02F396A2668B3EC0084D27A /* SelectImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImages.swift; sourceTree = "<group>"; };
 		A02F397F2668CC210084D27A /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		A02F39852668D0850084D27A /* MyHontingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHontingController.swift; sourceTree = "<group>"; };
+		A02F398D2668DA590084D27A /* WebView_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView_Test.swift; sourceTree = "<group>"; };
 		A53A2E42252EA4F8DA7E5784 /* Pods_SwiftUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4F988FED30D961FC80A0E0 /* Pods-SwiftUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIKit.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIKit/Pods-SwiftUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		DFB6C1A6C8D12AD400FC7030 /* Pods-SwiftUIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIKitTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIKitTests/Pods-SwiftUIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				A02F38B526685ED20084D27A /* SceneDelegate.swift */,
 				A02F38B726685ED20084D27A /* ContentView.swift */,
 				A02F39602668A51C0084D27A /* ListView_Test.swift */,
+				A02F398D2668DA590084D27A /* WebView_Test.swift */,
 				A02F38B926685ED30084D27A /* Assets.xcassets */,
 				A02F38BE26685ED30084D27A /* LaunchScreen.storyboard */,
 				A02F38C126685ED30084D27A /* Info.plist */,
@@ -491,6 +494,7 @@
 				A02F39612668A51C0084D27A /* ListView_Test.swift in Sources */,
 				A02F3929266878970084D27A /* WebView.swift in Sources */,
 				A02F396B2668B3EC0084D27A /* SelectImages.swift in Sources */,
+				A02F398E2668DA590084D27A /* WebView_Test.swift in Sources */,
 				A02F38F026685FEC0084D27A /* Map.swift in Sources */,
 				A02F38E826685F7F0084D27A /* ActivityIndicator.swift in Sources */,
 				A02F3938266878F80084D27A /* PageView.swift in Sources */,

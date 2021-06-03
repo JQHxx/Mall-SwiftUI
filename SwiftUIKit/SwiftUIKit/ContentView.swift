@@ -26,7 +26,8 @@ struct ContentView: View {
         }.navigationBarHidden(true)
         .edgesIgnoringSafeArea(.bottom)
  */
-        ListView()
+        //ListView()
+        WebView_Test()
         
         //SegmentControl(titles: titles, selectedSegmentIndex: $selectIndex)
     }

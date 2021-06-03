@@ -29,23 +29,23 @@ struct RefreshView: UIViewRepresentable {
             guard let viewHost = uiView.superview?.superview else {
                 return
             }
-            guard let tableView = self.tableView(root: viewHost) else {
+            guard let scrollView = self.scrollView(root: viewHost) else {
                 return
             }
             
-            if let _ = tableView.mj_header {
+            if let _ = scrollView.mj_header {
                 if self.isPullDown {
-                    if let _ = tableView.mj_footer {
+                    if let _ = scrollView.mj_footer {
                         context.coordinator.resetNoMoreData()
-                        tableView.mj_footer?.resetNoMoreData()
+                        scrollView.mj_footer?.resetNoMoreData()
                     }
-                    tableView.mj_header?.beginRefreshing()
+                    scrollView.mj_header?.beginRefreshing()
                 } else {
-                    tableView.mj_header?.endRefreshing()
+                    scrollView.mj_header?.endRefreshing()
                 }
             } else {
                 if let _ = pullDownAction {
-                    tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
+                    scrollView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
                         context.coordinator.onPullDownAction()
                         pullDownAction!()
                     })
@@ -53,18 +53,18 @@ struct RefreshView: UIViewRepresentable {
             }
             
             
-            if let _ = tableView.mj_footer {
+            if let _ = scrollView.mj_footer {
                 if self.isPullUp {
-                    tableView.mj_footer?.beginRefreshing()
+                    scrollView.mj_footer?.beginRefreshing()
                 } else {
-                    tableView.mj_footer?.endRefreshing()
+                    scrollView.mj_footer?.endRefreshing()
                     if isNoMoreData {
-                        tableView.mj_footer?.endRefreshingWithNoMoreData()
+                        scrollView.mj_footer?.endRefreshingWithNoMoreData()
                     }
                 }
             } else {
                 if let _ = pullUpAction {
-                    tableView.mj_footer = MJRefreshBackNormalFooter.init(refreshingBlock: {
+                    scrollView.mj_footer = MJRefreshBackNormalFooter.init(refreshingBlock: {
                         context.coordinator.onPullUpAction()
                         pullUpAction!()
                     })
@@ -109,13 +109,13 @@ struct RefreshView: UIViewRepresentable {
         }
     }
     
-    private func tableView(root: UIView) -> UITableView? {
+    private func scrollView(root: UIView) -> UIScrollView? {
         for subview in root.subviews {
             //print(subview.self)
-            if subview.isKind(of: UITableView.self) {
-                return subview as? UITableView
-            } else if let tableView = tableView(root: subview) {
-                return tableView
+            if subview.isKind(of: UIScrollView.self) {
+                return subview as? UIScrollView
+            } else if let scrollView = scrollView(root: subview) {
+                return scrollView
             }
         }
         return nil
