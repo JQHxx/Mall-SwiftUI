@@ -27,6 +27,8 @@ class ModelObject: ObservableObject {
         }
     }
     
+    @Published var isNoMoreData: Bool = false
+    
     func requestData() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             self.isPullDown = false
@@ -36,6 +38,7 @@ class ModelObject: ObservableObject {
     func requestMoreData() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             self.isPullUp = false
+            self.isNoMoreData = true
         }
     }
 }
@@ -60,7 +63,7 @@ struct ListView: View {
           List(array, id: \.self) { text in
             Text(text)
           }
-          .background(RefreshView.init(isPullDown: $modelObject.isPullDown, isPullUp: $modelObject.isPullUp, pullDownAction: {
+          .background(RefreshView.init(isPullDown: $modelObject.isPullDown, isPullUp: $modelObject.isPullUp, isNoMoreData: $modelObject.isNoMoreData, pullDownAction: {
 
           }, pullUpAction: {
 
