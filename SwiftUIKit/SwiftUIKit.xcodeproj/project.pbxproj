@@ -28,7 +28,7 @@
 		A02F3933266878D80084D27A /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F3932266878D80084D27A /* PageController.swift */; };
 		A02F3938266878F80084D27A /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F3937266878F80084D27A /* PageView.swift */; };
 		A02F395C2668A0CC0084D27A /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F395B2668A0CC0084D27A /* RefreshView.swift */; };
-		A02F39612668A51C0084D27A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F39602668A51C0084D27A /* ListView.swift */; };
+		A02F39612668A51C0084D27A /* ListView_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F39602668A51C0084D27A /* ListView_Test.swift */; };
 		A02F39662668AD5F0084D27A /* CycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F39652668AD5F0084D27A /* CycleScrollView.swift */; };
 		A02F396B2668B3EC0084D27A /* SelectImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F396A2668B3EC0084D27A /* SelectImages.swift */; };
 		E813AEBD20F8A0FED29AB867 /* Pods_SwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A2E42252EA4F8DA7E5784 /* Pods_SwiftUIKit.framework */; };
@@ -80,7 +80,7 @@
 		A02F3932266878D80084D27A /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		A02F3937266878F80084D27A /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		A02F395B2668A0CC0084D27A /* RefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
-		A02F39602668A51C0084D27A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A02F39602668A51C0084D27A /* ListView_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView_Test.swift; sourceTree = "<group>"; };
 		A02F39652668AD5F0084D27A /* CycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleScrollView.swift; sourceTree = "<group>"; };
 		A02F396A2668B3EC0084D27A /* SelectImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImages.swift; sourceTree = "<group>"; };
 		A53A2E42252EA4F8DA7E5784 /* Pods_SwiftUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +149,7 @@
 				A02F38B326685ED20084D27A /* AppDelegate.swift */,
 				A02F38B526685ED20084D27A /* SceneDelegate.swift */,
 				A02F38B726685ED20084D27A /* ContentView.swift */,
-				A02F39602668A51C0084D27A /* ListView.swift */,
+				A02F39602668A51C0084D27A /* ListView_Test.swift */,
 				A02F38B926685ED30084D27A /* Assets.xcassets */,
 				A02F38BE26685ED30084D27A /* LaunchScreen.storyboard */,
 				A02F38C126685ED30084D27A /* Info.plist */,
@@ -474,7 +474,7 @@
 			files = (
 				A02F395C2668A0CC0084D27A /* RefreshView.swift in Sources */,
 				A02F38FF2668607B0084D27A /* NavigationViewController.swift in Sources */,
-				A02F39612668A51C0084D27A /* ListView.swift in Sources */,
+				A02F39612668A51C0084D27A /* ListView_Test.swift in Sources */,
 				A02F3929266878970084D27A /* WebView.swift in Sources */,
 				A02F396B2668B3EC0084D27A /* SelectImages.swift in Sources */,
 				A02F38F026685FEC0084D27A /* Map.swift in Sources */,
