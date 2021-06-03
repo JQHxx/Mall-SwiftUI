@@ -29,6 +29,7 @@
 		A02F3938266878F80084D27A /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F3937266878F80084D27A /* PageView.swift */; };
 		A02F395C2668A0CC0084D27A /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F395B2668A0CC0084D27A /* RefreshView.swift */; };
 		A02F39612668A51C0084D27A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F39602668A51C0084D27A /* ListView.swift */; };
+		A02F39662668AD5F0084D27A /* CycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F39652668AD5F0084D27A /* CycleScrollView.swift */; };
 		E813AEBD20F8A0FED29AB867 /* Pods_SwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A2E42252EA4F8DA7E5784 /* Pods_SwiftUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		A02F3937266878F80084D27A /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		A02F395B2668A0CC0084D27A /* RefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
 		A02F39602668A51C0084D27A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A02F39652668AD5F0084D27A /* CycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleScrollView.swift; sourceTree = "<group>"; };
 		A53A2E42252EA4F8DA7E5784 /* Pods_SwiftUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4F988FED30D961FC80A0E0 /* Pods-SwiftUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIKit.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIKit/Pods-SwiftUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		DFB6C1A6C8D12AD400FC7030 /* Pods-SwiftUIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIKitTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIKitTests/Pods-SwiftUIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				A02F39142668651C0084D27A /* JXSView.swift */,
 				A02F395B2668A0CC0084D27A /* RefreshView.swift */,
+				A02F39652668AD5F0084D27A /* CycleScrollView.swift */,
 			);
 			path = 3rd;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				A02F38B426685ED20084D27A /* AppDelegate.swift in Sources */,
 				A02F39152668651C0084D27A /* JXSView.swift in Sources */,
 				A02F38F5266860100084D27A /* MyTextField.swift in Sources */,
+				A02F39662668AD5F0084D27A /* CycleScrollView.swift in Sources */,
 				A02F38B626685ED20084D27A /* SceneDelegate.swift in Sources */,
 				A02F3933266878D80084D27A /* PageController.swift in Sources */,
 				A02F392E266878BC0084D27A /* PageControl.swift in Sources */,
