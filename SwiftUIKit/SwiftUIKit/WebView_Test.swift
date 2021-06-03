@@ -16,14 +16,12 @@ class WebViewModelObject: ObservableObject {
             }
         }
     }
-    @Published var isPullUp: Bool = false
-    @Published var isNoMoreData: Bool = false
 }
 
 struct WebView_Test: View {
     @ObservedObject var modelObject = WebViewModelObject()
     var body: some View {
-        WebView.init(redirect: "https://www.baidu.com").background(RefreshView.init(isPullDown: $modelObject.isPullDown, isPullUp: $modelObject.isPullUp, isNoMoreData: $modelObject.isNoMoreData, pullDownAction: {
+        WebView.init(redirect: "https://www.baidu.com").background(RefreshView.init(isPullDown: $modelObject.isPullDown, pullDownAction: {
             $modelObject.isPullDown.wrappedValue = false
         }))
     }

@@ -16,7 +16,11 @@ struct RefreshView: UIViewRepresentable {
     let pullDownAction: (() -> Void)?
     let pullUpAction: (() -> Void)?
     
-    init(isPullDown: Binding<Bool>, isPullUp: Binding<Bool>, isNoMoreData: Binding<Bool>, pullDownAction: (() -> Void)? = nil, pullUpAction: (() -> Void)? = nil) {
+    init(isPullDown: Binding<Bool> = Binding<Bool>.constant(false),
+         isPullUp: Binding<Bool> = Binding<Bool>.constant(false),
+         isNoMoreData: Binding<Bool> = Binding<Bool>.constant(false),
+         pullDownAction: (() -> Void)? = nil,
+         pullUpAction: (() -> Void)? = nil) {
         _isPullDown = isPullDown
         _isPullUp = isPullUp
         _isNoMoreData = isNoMoreData
