@@ -72,6 +72,9 @@ struct ListView: View {
                       nav.navigationBar.barTintColor = .white
                       nav.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.purple]
                   }))
-        }
+        }.onAppear(perform: {
+            let controller = UIApplication.shared.windows[0].rootViewController as? MyHontingController
+            controller?.statusBarStyle = .lightContent
+        })
     }
 }
