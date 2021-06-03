@@ -59,13 +59,19 @@ struct ListView: View {
         NavigationView {
           List(array, id: \.self) { text in
             Text(text)
-          }.background(RefreshView.init(isPullDown: $modelObject.isPullDown, isPullUp: $modelObject.isPullUp, pullDownAction: {
-            
+          }
+          .background(RefreshView.init(isPullDown: $modelObject.isPullDown, isPullUp: $modelObject.isPullUp, pullDownAction: {
+
           }, pullUpAction: {
-            
-          })).navigationBarHidden(true)
-          .navigationBarTitle("刷新demo")
+
+          }))
+          .navigationBarHidden(false)
+          .navigationBarTitle("刷新demo", displayMode: .inline)
           .edgesIgnoringSafeArea(.all)
+          .background(NavigationConfigurator(configure: { nav in
+                      nav.navigationBar.barTintColor = .white
+                      nav.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.purple]
+                  }))
         }
     }
 }
