@@ -7,5 +7,6 @@ target 'GeekMadeBySwiftUI' do
   pod 'WaterfallGrid'
   pod 'Moya/RxSwift'
   pod "SwiftUIRefresh"
+  pod 'JXSegmentedView'
   
 end

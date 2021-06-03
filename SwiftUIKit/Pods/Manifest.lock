@@ -1,0 +1,16 @@
+PODS:
+  - JXSegmentedView (1.2.7)
+
+DEPENDENCIES:
+  - JXSegmentedView
+
+SPEC REPOS:
+  trunk:
+    - JXSegmentedView
+
+SPEC CHECKSUMS:
+  JXSegmentedView: eb1cad21f57c2543c00c3e08b8fd3c7ca54f5acd
+
+PODFILE CHECKSUM: 9dc5799abfb9d63afa4f132ba3d3d2b4ef318fd2
+
+COCOAPODS: 1.10.1

@@ -6,6 +6,7 @@ target 'SwiftUI_Jike' do
   pod 'Kingfisher', '~> 6.0'
   pod 'Alamofire', '~> 5.4.3'
   pod 'SwiftyJSON', '~> 5.0.1'
+  pod 'Introspect'
   # 瀑布流
   # pod 'WaterfallGrid', '~> 1.0.0'
   # pod 'ASCollectionView-SwiftUI', '~> 1.3'

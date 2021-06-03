@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+use_frameworks!
+
+target 'SwiftUIKit' do
+
+#  pod 'Kingfisher'
+#  pod 'WaterfallGrid'
+#  pod 'Moya/RxSwift'
+#  pod "SwiftUIRefresh"
+#  pod 'JXSegmentedView'
+#  pod 'SDWebImageSwiftUI'
+#  pod 'SwiftyJSON'
+#  pod 'Alamofire'
+#  pod 'ASCollectionView-SwiftUI', '~> 1.3'
+#  # 弹窗
+#  pod 'ExytePopupView'
+  pod 'JXSegmentedView', '~> 1.2.7'
+
+  target 'SwiftUIKitTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SwiftUIKitUITests' do
+    # Pods for testing
+  end
+
+end
