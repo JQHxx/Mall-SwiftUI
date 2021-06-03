@@ -12,6 +12,8 @@ struct ContentView: View {
     var titles = ["测试1", "测试1", "测试1", "测试1", "测试1"]
     @State var selectIndex: Int = 0
     
+    @State var isHeaderRefresh: Bool = true
+    
     var body: some View {
         
         /*
@@ -24,8 +26,9 @@ struct ContentView: View {
         }.navigationBarHidden(true)
         .edgesIgnoringSafeArea(.bottom)
  */
+        ListView()
         
-        SegmentControl(titles: titles, selectedSegmentIndex: $selectIndex)
+        //SegmentControl(titles: titles, selectedSegmentIndex: $selectIndex)
     }
 }
 

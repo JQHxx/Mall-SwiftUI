@@ -16,6 +16,9 @@ target 'SwiftUIKit' do
 #  # 弹窗
 #  pod 'ExytePopupView'
   pod 'JXSegmentedView', '~> 1.2.7'
+  pod 'SDCycleScrollView'
+  pod 'MJRefresh'
+  pod 'SnapKit'
 
   target 'SwiftUIKitTests' do
     inherit! :search_paths
