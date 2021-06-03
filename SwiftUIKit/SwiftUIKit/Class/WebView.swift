@@ -15,6 +15,7 @@ struct WebView: UIViewRepresentable {
         WKWebView()
     }
     
+    // redirect 重新赋值就会调用
     func updateUIView(_ uiView: WKWebView, context: Context) {
         if let url = URL(string: redirect ?? "") {
             uiView.load(URLRequest.init(url: url))
