@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import InterfaceKit
 
 struct ContentView: View {
     
@@ -14,8 +15,15 @@ struct ContentView: View {
     
     @State var isHeaderRefresh: Bool = true
     
+    let myView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.orange
+        return view
+    }()
+    
     var body: some View {
         
+        //InterfaceView(self.myView)
         /*
         VStack(alignment: .leading) {
             VStack(alignment: .center) {
@@ -26,8 +34,8 @@ struct ContentView: View {
         }.navigationBarHidden(true)
         .edgesIgnoringSafeArea(.bottom)
  */
-        //ListView()
-        WebView_Test()
+        ListView()
+        //WebView_Test()
         
         //SegmentControl(titles: titles, selectedSegmentIndex: $selectIndex)
     }

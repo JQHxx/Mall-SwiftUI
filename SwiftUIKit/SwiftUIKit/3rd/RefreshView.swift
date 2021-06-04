@@ -125,3 +125,29 @@ struct RefreshView: UIViewRepresentable {
         return nil
     }
 }
+
+extension View {
+    /**
+     * 注意：addRefreshHeader 和 addRefreshFooter 不能同时使用， 两个都要使用addRefresh
+     */
+    func addRefreshHeader(isRefreshing: Binding<Bool>,
+                          action: (() -> Void)? = nil) -> some View {
+        self.background(RefreshView.init(isPullDown: isRefreshing, pullDownAction: action))
+        
+    }
+    
+    func addRefreshFooter(isLoadingMore: Binding<Bool>,
+                          isNoMoreData: Binding<Bool>,
+                          action: (() -> Void)? = nil) -> some View {
+        self.background(RefreshView.init(isPullUp: isLoadingMore, isNoMoreData: isNoMoreData, pullUpAction: action))
+        
+    }
+    
+    func addRefresh(isPullDown: Binding<Bool>,
+                     isPullUp: Binding<Bool>,
+                     isNoMoreData: Binding<Bool>,
+                     pullDownAction: (() -> Void)? = nil,
+                     pullUpAction: (() -> Void)? = nil ) -> some View {
+        self.background(RefreshView.init(isPullDown: isPullDown, isPullUp: isPullUp, isNoMoreData: isNoMoreData,  pullDownAction: pullDownAction, pullUpAction: pullDownAction))
+    }
+}

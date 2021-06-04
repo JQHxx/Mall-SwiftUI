@@ -49,35 +49,56 @@ struct ListView: View {
     var array = ["a","b","c","d","e","f","g","b","c","d","e","f","g","b","c","d","e","f","g","b","c","d","e","f","g"]
     
     init() {
-        // To remove only extra separators below the list:
-        //UITableView.appearance().tableHeaderView = UIView()
-        
-        // To remove all separators including the actual ones:
-        //UITableView.appearance().separatorStyle = .none
+        //        UITableView.appearance().separatorStyle = .none
+        //        //UITableView.appearance().backgroundColor = UIColor.red
+        //        //UITableView.appearance().tintColor = UIColor.blue
+        //        //UITableView.appearance().separatorColor = .blue
+        //        //        去掉点击效果
+        //        UITableViewCell.appearance().selectionStyle = .none
+        //        //UITableViewCell.appearance().backgroundColor = .yellow
+        //        UITableView.appearance().sectionFooterHeight = 10
+        //        UITableView.appearance().estimatedRowHeight = 0
+        //        UITableView.appearance().estimatedSectionFooterHeight = 0
+        //        UITableView.appearance().estimatedSectionHeaderHeight = 0
     }
-
-
+    
+    
     
     var body: some View {
         NavigationView {
-          List(array, id: \.self) { text in
-            Text(text)
-          }
-          .background(RefreshView.init(isPullDown: $modelObject.isPullDown, isPullUp: $modelObject.isPullUp, isNoMoreData: $modelObject.isNoMoreData, pullDownAction: {
-
-          }, pullUpAction: {
-
-          }))
-          .navigationBarHidden(false)
-          .navigationBarTitle("刷新demo", displayMode: .inline)
-          .edgesIgnoringSafeArea(.all)
-          .background(NavigationConfigurator(configure: { nav in
-                      nav.navigationBar.barTintColor = .white
-                      nav.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.purple]
-                  }))
-        }.onAppear(perform: {
+            
+            List {
+                ForEach(array, id:\.self) { text in
+                    VStack {
+                        HStack {
+                            Text(text).background(Color.orange)
+                            Spacer().background(Color.orange)
+                        }
+                        Divider()
+                    }.listRowInsets(EdgeInsets())
+                    .onTapGesture {
+                        print("点击")
+                    }
+                }
+            }
+            .background(RefreshView.init(isPullDown: $modelObject.isPullDown, isPullUp: $modelObject.isPullUp, isNoMoreData: $modelObject.isNoMoreData, pullDownAction: {
+                
+            }, pullUpAction: {
+                
+            }))
+            //.listStyle(SidebarListStyle())
+            .navigationBarHidden(false)
+            .navigationBarTitle("刷新demo", displayMode: .inline)
+            .edgesIgnoringSafeArea(.all)
+            .background(NavigationConfigurator(configure: { nav in
+                nav.navigationBar.barTintColor = .white
+                nav.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.purple]
+            }))
+        }
+        .onAppear(perform: {
             let controller = UIApplication.shared.windows[0].rootViewController as? MyHontingController
             controller?.statusBarStyle = .lightContent
+            
         })
     }
 }

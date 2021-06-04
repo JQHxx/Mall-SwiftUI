@@ -16,7 +16,7 @@ struct TabPage: View {
     
     var body: some View {
         VStack {
-            JXSView()
+            //JXSView()
         }
     }
 }

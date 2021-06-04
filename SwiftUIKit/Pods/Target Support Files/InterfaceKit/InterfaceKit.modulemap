@@ -1,0 +1,6 @@
+framework module InterfaceKit {
+  umbrella header "InterfaceKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
