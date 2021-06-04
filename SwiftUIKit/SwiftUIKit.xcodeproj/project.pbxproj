@@ -37,6 +37,8 @@
 		A075850E2669FA3F00CAA209 /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075850D2669FA3F00CAA209 /* MineView.swift */; };
 		A07585162669FA5100CAA209 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07585152669FA5100CAA209 /* CategoryView.swift */; };
 		A075851B2669FA6500CAA209 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075851A2669FA6500CAA209 /* HomeView.swift */; };
+		A0758520266A0E6500CAA209 /* TestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A075851F266A0E6500CAA209 /* TestTableView.swift */; };
+		A0758525266A19DA00CAA209 /* Test1TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0758524266A19DA00CAA209 /* Test1TableView.swift */; };
 		A0D203012669F2AC00600FE0 /* 布局.md in Resources */ = {isa = PBXBuildFile; fileRef = A0D203002669F2AC00600FE0 /* 布局.md */; };
 		E813AEBD20F8A0FED29AB867 /* Pods_SwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A2E42252EA4F8DA7E5784 /* Pods_SwiftUIKit.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +98,8 @@
 		A075850D2669FA3F00CAA209 /* MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
 		A07585152669FA5100CAA209 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		A075851A2669FA6500CAA209 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A075851F266A0E6500CAA209 /* TestTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableView.swift; sourceTree = "<group>"; };
+		A0758524266A19DA00CAA209 /* Test1TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1TableView.swift; sourceTree = "<group>"; };
 		A0D203002669F2AC00600FE0 /* 布局.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "布局.md"; sourceTree = "<group>"; };
 		A53A2E42252EA4F8DA7E5784 /* Pods_SwiftUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4F988FED30D961FC80A0E0 /* Pods-SwiftUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIKit.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIKit/Pods-SwiftUIKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 				A02F3932266878D80084D27A /* PageController.swift */,
 				A02F3937266878F80084D27A /* PageView.swift */,
 				A02F397F2668CC210084D27A /* NavigationConfigurator.swift */,
+				A075851F266A0E6500CAA209 /* TestTableView.swift */,
+				A0758524266A19DA00CAA209 /* Test1TableView.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -553,12 +559,14 @@
 				A02F3938266878F80084D27A /* PageView.swift in Sources */,
 				A02F38B426685ED20084D27A /* AppDelegate.swift in Sources */,
 				A075850E2669FA3F00CAA209 /* MineView.swift in Sources */,
+				A0758525266A19DA00CAA209 /* Test1TableView.swift in Sources */,
 				A02F39152668651C0084D27A /* JXSView.swift in Sources */,
 				A02F39862668D0850084D27A /* MyHontingController.swift in Sources */,
 				A02F38F5266860100084D27A /* MyTextField.swift in Sources */,
 				A02F39662668AD5F0084D27A /* CycleScrollView.swift in Sources */,
 				A02F38B626685ED20084D27A /* SceneDelegate.swift in Sources */,
 				A07585162669FA5100CAA209 /* CategoryView.swift in Sources */,
+				A0758520266A0E6500CAA209 /* TestTableView.swift in Sources */,
 				A02F3933266878D80084D27A /* PageController.swift in Sources */,
 				A02F392E266878BC0084D27A /* PageControl.swift in Sources */,
 				A02F38FA266860510084D27A /* SegmentControl.swift in Sources */,

@@ -7,23 +7,28 @@
 
 import SwiftUI
 import InterfaceKit
+import Combine
 
 struct ContentView: View {
     
-    var titles = ["测试1", "测试1", "测试1", "测试1", "测试1"]
+    @State var titles = ["测试1", "测试2", "测试3", "测试4", "测试5"]
     @State var selectIndex: Int = 0
     
     @State var isHeaderRefresh: Bool = true
     
-    let myView: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor.orange
+    let myView: TestTableView = {
+        let view = TestTableView.init(frame: CGRect.zero, style: UITableView.Style.plain)
+        //view.backgroundColor = UIColor.orange
         return view
     }()
     
     var body: some View {
         
-        //InterfaceView(self.myView)
+        /* 不能使用跳转
+        InterfaceView(self.myView.setup(titles, { str in
+            print(str)
+        }))
+         */
         /*
         VStack(alignment: .leading) {
             VStack(alignment: .center) {
@@ -34,10 +39,16 @@ struct ContentView: View {
         }.navigationBarHidden(true)
         .edgesIgnoringSafeArea(.bottom)
  */
-        ListView()
+        //ListView()
         //WebView_Test()
         
         //SegmentControl(titles: titles, selectedSegmentIndex: $selectIndex)
+        NavigationView {
+            CSTableView.init([NavigationLink.init(destination: HomeView(), label: {
+                Text("123")
+            })])
+        }
+
     }
 }
 

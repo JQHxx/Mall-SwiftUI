@@ -69,16 +69,18 @@ struct ListView: View {
             
             List {
                 ForEach(array, id:\.self) { text in
-                    VStack {
-                        HStack {
-                            Text(text).background(Color.orange)
-                            Spacer().background(Color.orange)
-                        }
-                        Divider()
-                    }.listRowInsets(EdgeInsets())
-                    .onTapGesture {
-                        print("点击")
+                    
+                    NavigationLink.init(destination: HomeView()) {
+                        VStack {
+                            HStack {
+                                Text(text).background(Color.orange)
+                                Spacer().background(Color.orange)
+                            }
+                            Divider()
+                        }.listRowInsets(EdgeInsets())
                     }
+
+                    
                 }
             }
             .background(RefreshView.init(isPullDown: $modelObject.isPullDown, isPullUp: $modelObject.isPullUp, isNoMoreData: $modelObject.isNoMoreData, pullDownAction: {

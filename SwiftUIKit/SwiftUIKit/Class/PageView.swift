@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-import SwiftUI
 
 struct PageView<T : View>: View {
     @State var currentPage = 0
     private var controllers : [UIHostingController<T>]
+    
     
     init(_ views : [T]) {
         self.controllers = views.map { UIHostingController(rootView: $0)}
