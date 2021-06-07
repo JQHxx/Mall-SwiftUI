@@ -21,15 +21,16 @@ struct CSTableView<T: View>: View {
     }
     
     var body: some View {
-        Test1TableView.init(controllers)
+        Text("122")
+        //Test1TableView.init(controllers)
     }
     
 }
 
 struct Test1TableView: UIViewRepresentable {
     
-    private var datas: [UIViewController]
-    init(_ datas: [UIViewController]) {
+    private var datas: [String]
+    init(_ datas: [String]) {
         self.datas = datas
     }
     func updateUIView(_ uiView: UITableView, context: Context) {
@@ -38,6 +39,7 @@ struct Test1TableView: UIViewRepresentable {
 
     func makeUIView(context: Context) -> UITableView {
         let tableView = UITableView.init(frame: CGRect.zero, style: UITableView.Style.plain)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ID")
         tableView.delegate = context.coordinator
         tableView.dataSource = context.coordinator
         tableView.separatorStyle = .none
@@ -66,18 +68,31 @@ struct Test1TableView: UIViewRepresentable {
             if cell == nil {
                 cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "ID")
             }
-            let VC = parent.datas[indexPath.row]
-            //cell?.textLabel?.text = str
-            cell?.contentView.addSubview(VC.view)
-            VC.view.snp.makeConstraints { (make) in
-                make.edges.equalToSuperview()
-            }
+            let str = self.parent.datas[indexPath.row]
+            cell?.textLabel?.text = str
             return cell!
         }
         
-//        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//            tableView.deselectRow(at: indexPath, animated: true)
-//        }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+            
+            let destination = HomeView()
+            let host = UIHostingController(rootView: destination)
+            host.modalPresentationStyle = .fullScreen
+            let controller = UIApplication.shared.windows[0].rootViewController as? MyHontingController
+            controller?.present(host, animated: true, completion: nil)
+        }
         
+    }
+}
+
+struct Test1TableViewCell: UIViewRepresentable {
+    func updateUIView(_ uiView: UITableViewCell, context: Context) {
+        //uiView.reloadData()
+    }
+
+    func makeUIView(context: Context) -> UITableViewCell {
+        let tableViewCell = UITableViewCell()
+        return tableViewCell
     }
 }

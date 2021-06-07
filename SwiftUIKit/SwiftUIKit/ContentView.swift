@@ -44,9 +44,7 @@ struct ContentView: View {
         
         //SegmentControl(titles: titles, selectedSegmentIndex: $selectIndex)
         NavigationView {
-            CSTableView.init([NavigationLink.init(destination: HomeView(), label: {
-                Text("123")
-            })])
+            AnyView(Test1TableView.init(titles)).navigationTitle("测试")
         }
 
     }
