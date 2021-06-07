@@ -57,7 +57,12 @@ struct ContentView: View {
                         animated: false,
                         snapshot: self.snapshot(),
                         configureUIView: self.configureTableview,
-                        row: { self.row(with: $0, geometry: geometry) }
+                        row: { self.row(with: $0, geometry: geometry) },
+                        onSelect: { data in
+                            //每次打印isActive都是false,说明这是一个状态位标识
+                            print(self.isActive)
+                            self.isActive = true
+                        }
                     )
                     .edgesIgnoringSafeArea(.all)
                     .navigationViewStyle(StackNavigationViewStyle())
@@ -76,11 +81,7 @@ struct ContentView: View {
     
     func row(with row: Row, geometry: GeometryProxy) -> some View {
         NavigationLink.init(destination: HomeView(), isActive: $isActive) {
-            Text(row.title).onTapGesture {
-                //每次打印isActive都是false,说明这是一个状态位标识
-                print(self.isActive)
-                self.isActive = true
-            }
+            Text(row.title).padding(15)
         }
     }
     
@@ -93,7 +94,7 @@ struct ContentView: View {
     
     func configureTableview(_ tableView: UITableView) {
         let tableHeaderView = UIHostingController(
-            rootView: Text("table header")
+            rootView: Text("table header").padding(15)
         )
         tableHeaderView.view.backgroundColor = .clear
         tableHeaderView.view.sizeToFit()
