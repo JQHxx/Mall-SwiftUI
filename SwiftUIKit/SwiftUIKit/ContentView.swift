@@ -15,6 +15,7 @@ struct ContentView: View {
     @State var selectIndex: Int = 0
     
     @State var isHeaderRefresh: Bool = true
+    @State var isActive = false
     
     let myView: TestTableView = {
         let view = TestTableView.init(frame: CGRect.zero, style: UITableView.Style.plain)
@@ -50,18 +51,18 @@ struct ContentView: View {
          */
         
         NavigationView {
-            GeometryReader { geometry in
-                VStack {
+            VStack {
+                GeometryReader { geometry in
                     TableView(
                         animated: false,
                         snapshot: self.snapshot(),
                         configureUIView: self.configureTableview,
                         row: { self.row(with: $0, geometry: geometry) }
                     )
+                    .edgesIgnoringSafeArea(.all)
+                    .navigationViewStyle(StackNavigationViewStyle())
+                    .navigationBarTitle("测试TableView")
                 }
-                .edgesIgnoringSafeArea(.all)
-                .navigationViewStyle(StackNavigationViewStyle())
-                .navigationBarTitle("测试TableView")
             }
         }
         
@@ -74,8 +75,12 @@ struct ContentView: View {
     }
     
     func row(with row: Row, geometry: GeometryProxy) -> some View {
-        NavigationLink.init(destination: HomeView()) {
-            Text(row.title)
+        NavigationLink.init(destination: HomeView(), isActive: $isActive) {
+            Text(row.title).onTapGesture {
+                //每次打印isActive都是false,说明这是一个状态位标识
+                print(self.isActive)
+                self.isActive = true
+            }
         }
     }
     
