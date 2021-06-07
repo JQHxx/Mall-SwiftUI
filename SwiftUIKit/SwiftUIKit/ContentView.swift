@@ -25,28 +25,80 @@ struct ContentView: View {
     var body: some View {
         
         /* 不能使用跳转
-        InterfaceView(self.myView.setup(titles, { str in
-            print(str)
-        }))
+         InterfaceView(self.myView.setup(titles, { str in
+         print(str)
+         }))
          */
         /*
-        VStack(alignment: .leading) {
-            VStack(alignment: .center) {
-                JXSView.init(titles: titles, selectedIndex: $selectIndex).frame(height: 30)
-                Divider().frame(height: 1)
-                Text("\(selectIndex)").frame(height: UIScreen.main.bounds.height - 31)
-            }
-        }.navigationBarHidden(true)
-        .edgesIgnoringSafeArea(.bottom)
- */
+         VStack(alignment: .leading) {
+         VStack(alignment: .center) {
+         JXSView.init(titles: titles, selectedIndex: $selectIndex).frame(height: 30)
+         Divider().frame(height: 1)
+         Text("\(selectIndex)").frame(height: UIScreen.main.bounds.height - 31)
+         }
+         }.navigationBarHidden(true)
+         .edgesIgnoringSafeArea(.bottom)
+         */
         //ListView()
         //WebView_Test()
         
         //SegmentControl(titles: titles, selectedSegmentIndex: $selectIndex)
+        /*
+         NavigationView {
+         AnyView(Test1TableView.init(titles)).navigationTitle("测试")
+         }
+         */
+        
         NavigationView {
-            AnyView(Test1TableView.init(titles)).navigationTitle("测试")
+            GeometryReader { geometry in
+                VStack {
+                    TableView(
+                        animated: false,
+                        snapshot: self.snapshot(),
+                        configureUIView: self.configureTableview,
+                        row: { self.row(with: $0, geometry: geometry) }
+                    )
+                }
+                .edgesIgnoringSafeArea(.all)
+                .navigationViewStyle(StackNavigationViewStyle())
+                .navigationBarTitle("测试TableView")
+            }
         }
-
+        
+    }
+    
+    struct Section: Hashable {}
+    
+    struct Row: Hashable {
+        var title: String = ""
+    }
+    
+    func row(with row: Row, geometry: GeometryProxy) -> some View {
+        NavigationLink.init(destination: HomeView()) {
+            Text(row.title)
+        }
+    }
+    
+    func snapshot() -> NSDiffableDataSourceSnapshot<Section, Row> {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Row>()
+        snapshot.appendSections([Section()])
+        snapshot.appendItems([Row.init(title: "items"), Row.init(title: "items1"), Row.init(title: "items2"), Row.init(title: "items3")])
+        return snapshot
+    }
+    
+    func configureTableview(_ tableView: UITableView) {
+        let tableHeaderView = UIHostingController(
+            rootView: Text("table header")
+        )
+        tableHeaderView.view.backgroundColor = .clear
+        tableHeaderView.view.sizeToFit()
+        tableView.backgroundColor = UIColor.white
+        tableView.separatorStyle = .none
+        tableView.insetsContentViewsToSafeArea = false
+        tableView.keyboardDismissMode = .onDrag
+        tableView.estimatedRowHeight = 100
+        tableView.tableHeaderView = tableHeaderView.view
+        tableView.tableFooterView = UIView()
     }
 }
 
