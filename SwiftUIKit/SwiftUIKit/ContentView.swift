@@ -9,6 +9,9 @@ import SwiftUI
 import InterfaceKit
 import Combine
 
+
+
+
 struct ContentView: View {
     
     @State var titles = ["测试1", "测试2", "测试3", "测试4", "测试5"]
@@ -50,6 +53,7 @@ struct ContentView: View {
          }
          */
         
+        /*
         NavigationView {
             VStack {
                 GeometryReader { geometry in
@@ -70,8 +74,12 @@ struct ContentView: View {
                 }
             }
         }
+         */
         
+        Text("122").onTapGesture {
+        }
     }
+    
     
     struct Section: Hashable {}
     

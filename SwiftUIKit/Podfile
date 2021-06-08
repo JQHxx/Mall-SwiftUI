@@ -22,6 +22,7 @@ target 'SwiftUIKit' do
   pod 'TZImagePickerController'
   # 直接使用UIView和UIViewController
   pod 'InterfaceKit'
+  # pod 'SwiftUIRouter'
 
   target 'SwiftUIKitTests' do
     inherit! :search_paths
