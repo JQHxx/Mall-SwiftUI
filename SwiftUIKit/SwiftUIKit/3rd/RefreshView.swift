@@ -53,6 +53,7 @@ struct RefreshView: UIViewRepresentable {
                         context.coordinator.onPullDownAction()
                         pullDownAction!()
                     })
+                    scrollView.mj_header?.isCollectionViewAnimationBug = true                    
                 }
             }
             
